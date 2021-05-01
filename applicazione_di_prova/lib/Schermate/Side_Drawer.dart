@@ -1,3 +1,4 @@
+import 'package:applicazione_di_prova/Schermate/GalleriaPro.dart';
 import 'package:flutter/material.dart';
 import '../Schermate/Pagina_Preventivo.dart';
 import '../Schermate/Galleria.dart';
@@ -45,6 +46,14 @@ class SideDrawer extends StatelessWidget {
             onTap: () {
               Navigator.push(
                   context, MaterialPageRoute(builder: (context) => Galleria()));
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.photo),
+            title: Text('Galleria Pro'),
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => GalleriaPro()));
             },
           ),
           ListTile(
