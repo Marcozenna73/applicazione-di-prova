@@ -1,8 +1,10 @@
+import 'package:applicazione_di_prova/Schermate/GalleriaFinale.dart';
 import 'package:applicazione_di_prova/Schermate/GalleriaPro.dart';
 import 'package:flutter/material.dart';
 import '../Schermate/Pagina_Preventivo.dart';
 import '../Schermate/Galleria.dart';
 import '../Schermate/Pagina_Informazioni.dart';
+import 'GalleriaFinale.dart';
 
 class SideDrawer extends StatelessWidget {
   @override
@@ -54,6 +56,14 @@ class SideDrawer extends StatelessWidget {
             onTap: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => GalleriaPro()));
+            },
+          ),
+          ListTile(
+            leading: Icon(Icons.photo),
+            title: Text('Galleria Finale'),
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => GalleriaFinale()));
             },
           ),
           ListTile(

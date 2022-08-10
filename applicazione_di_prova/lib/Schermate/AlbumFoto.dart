@@ -11,6 +11,14 @@ class AlbumFoto extends StatelessWidget {
         ),
         backgroundColor: Colors.black,
       ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(
+          Icons.add_a_photo_outlined,
+          color: Colors.white,
+        ),
+        backgroundColor: Colors.black,
+        onPressed: () {},
+      ),
     );
   }
 }
